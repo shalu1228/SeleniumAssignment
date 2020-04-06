@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.myntra.testScripts.TC_04_Add_MensTshirt_to_Cart">
+        <methods>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="configAC"/>
+          <include name="menTshirt"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.myntra.testScripts.TC_04_Add_MensTshirt_to_Cart -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
