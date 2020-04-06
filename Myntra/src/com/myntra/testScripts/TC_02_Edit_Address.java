@@ -1,6 +1,7 @@
 package com.myntra.testScripts;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.myntra.genericLibrary.Base;
@@ -9,6 +10,7 @@ import com.myntra.objectRepository.EditProfilePage;
 import com.myntra.objectRepository.HomePage;
 import com.myntra.objectRepository.ProfilePage;
 
+@Listeners(com.myntra.genericLibrary.ListenerImp.class)
 public class TC_02_Edit_Address extends Base{
 	
 	@Test
