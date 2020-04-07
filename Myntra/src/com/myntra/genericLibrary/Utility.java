@@ -60,6 +60,14 @@ public class Utility {
 		
 	}
 	
+	public void moveToElementClick(WebDriver driver, WebElement webElemnt)
+	{
+		Actions act = new Actions(driver);
+		act.moveToElement(webElemnt).click().perform();
+		
+		
+	}
+	
 	
 	public Object[][] getAllData(String filePath,String sheetName)
 	{

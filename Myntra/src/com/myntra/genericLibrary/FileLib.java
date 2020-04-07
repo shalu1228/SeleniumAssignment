@@ -14,7 +14,7 @@ public class FileLib {
 		FileInputStream ip = null;
 		Properties prop = null;
 		try {
-			ip = new FileInputStream("./commonData.properties");
+			ip = new FileInputStream("./TestData/commonData.properties");
 			prop = new Properties();
 			prop.load(ip);
 		} catch (Exception e) {
@@ -28,7 +28,7 @@ public class FileLib {
 		FileInputStream ip = null;
 		Workbook wb = null;
 		try {
-			ip = new FileInputStream("./src/main/java/com/vTigerMaven/testData/testData.xlsx");
+			ip = new FileInputStream("./TestData/testdata.xlsx");
 			wb = WorkbookFactory.create(ip);
 		} catch (Exception e) {
 			e.printStackTrace();

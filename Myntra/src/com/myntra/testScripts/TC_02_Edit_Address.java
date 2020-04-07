@@ -27,11 +27,11 @@ public class TC_02_Edit_Address extends Base{
 		
 		ap.getEditAddress().click();
 		
-		ap.getNameTB().sendKeys("Shalu");
+		ap.getNameTB().sendKeys(flib.getExcelData("Address", 1, 0));
 		
-		ap.getMonileNoTB().sendKeys("9741178782");
+		ap.getMonileNoTB().sendKeys(flib.getExcelData("Address", 1, 1));
 		
-		ap.getAddressTB().sendKeys("#354,6th cross Nisarga Layout");
+		ap.getAddressTB().sendKeys(flib.getExcelData("Address", 1, 2));
 		
 		ap.getSaveBT().click();
 		

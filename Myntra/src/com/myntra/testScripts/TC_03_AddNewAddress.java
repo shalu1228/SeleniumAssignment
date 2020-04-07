@@ -27,19 +27,19 @@ public class TC_03_AddNewAddress extends Base{
 		
 		np.getNewAddress().click();
 		
-		np.getNameTB().sendKeys("Shalini K N");
+		np.getNameTB().sendKeys(flib.getExcelData("NewAddress", 1, 0));
 		
-		np.getMobileTB().sendKeys("9206567718");
+		np.getMobileTB().sendKeys(flib.getExcelData("NewAddress", 1, 1));
 		
-		np.getPincodeTB().sendKeys("560105");
+		np.getPincodeTB().sendKeys(flib.getExcelData("NewAddress", 1, 2));
 		
-		np.getStateTB().sendKeys("Karnataka");
+		np.getStateTB().sendKeys(flib.getExcelData("NewAddress", 1, 3));
 		
-		np.getCityTb().sendKeys("Bangalore");
+		np.getCityTb().sendKeys(flib.getExcelData("NewAddress", 1, 4));
 		
-		np.getAddressTb().sendKeys("#44,nisarga layout");
+		np.getAddressTb().sendKeys(flib.getExcelData("NewAddress", 1, 5));
 		
-		np.getLocalityTb().sendKeys("harapanahalli");
+		np.getLocalityTb().sendKeys(flib.getExcelData("NewAddress", 1, 6));
 		
 		np.getHomeRadioBt().click();
 		

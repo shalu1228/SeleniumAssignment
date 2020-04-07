@@ -3,36 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.myntra.testScripts.TC_02_Edit_Address">
-        <methods>
-          <include name="configBM"/>
-          <include name="editAddress"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.myntra.testScripts.TC_02_Edit_Address -->
       <class name="com.myntra.testScripts.TC_04_Add_MensTshirt_to_Cart">
-        <methods>
-          <include name="menTshirt"/>
-        </methods>
-      </class> <!-- com.myntra.testScripts.TC_04_Add_MensTshirt_to_Cart -->
-      <class name="com.myntra.testScripts.TC_03_AddNewAddress">
-        <methods>
-          <include name="newAddress"/>
-        </methods>
-      </class> <!-- com.myntra.testScripts.TC_03_AddNewAddress -->
-      <class name="com.myntra.testScripts.TC_Login_to_Myntra">
-        <methods>
-          <include name="logIn"/>
-        </methods>
-      </class> <!-- com.myntra.testScripts.TC_Login_to_Myntra -->
-      <class name="com.myntra.testScripts.TC_01_EditProfile">
         <methods>
           <include name="configAM"/>
           <include name="configBM"/>
           <include name="configAC"/>
+          <include name="menTshirt"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.myntra.testScripts.TC_01_EditProfile -->
+      </class> <!-- com.myntra.testScripts.TC_04_Add_MensTshirt_to_Cart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

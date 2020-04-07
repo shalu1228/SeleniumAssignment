@@ -27,11 +27,25 @@ public class MenDropdown {
 		return wishlistNowBt;
 	}
 
-	@FindBy(xpath="//img[contains(@title,'H&M Men Beige Solid Cotton T-shirt Regular Fit')]")
+	@FindBy(xpath="//img[contains(@title,'DILLINGER Men Navy Blue Colourblocked Round Neck T-shirt')]")
 	private WebElement tshirtImg;
 	
 	@FindBy(xpath="//span[text()='WISHLIST NOW']")
 	private WebElement wishlistNowBt;
 	
+	@FindBy(xpath="//span[text()='Wishlist']")
+	private WebElement wishlistPage;
+
+	public WebElement getWishlistPage() {
+		return wishlistPage;
+	}
+	
+	
+	@FindBy(xpath="//p[contains(text(),'DILLINGER Men Navy Blue Colourblocked Round Neck T-shirt')]")
+	private WebElement productName;
+
+	public WebElement getProductName() {
+		return productName;
+	}
 
 }

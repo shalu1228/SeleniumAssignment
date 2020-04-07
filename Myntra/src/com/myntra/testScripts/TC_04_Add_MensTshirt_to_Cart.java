@@ -1,6 +1,7 @@
 package com.myntra.testScripts;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -20,10 +21,11 @@ public class TC_04_Add_MensTshirt_to_Cart extends Base{
 		util.moveToElementDouble(driver, md.getTshirtImg());
 		String cid=driver.getWindowHandle();
 		
-		driver.switchTo().window(cid);
-		
-		
+		util.switchToNewWindow(driver);
 		md.getWishlistNowBt().click();
+		util.moveToElementClick(driver, md.getWishlistPage());
+		String tshirt=md.getProductName().getText();
+		Reporter.log(tshirt, true);
 
 	}
 

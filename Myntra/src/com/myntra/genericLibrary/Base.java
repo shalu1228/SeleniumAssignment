@@ -63,8 +63,8 @@ public class Base {
 		lp = PageFactory.initElements(driver, LoginPage.class);
 		util.moveToElement(driver, lp.getProfileImg());
 		lp.getLogIn().click();
-		lp.getEmailTb().sendKeys("shaliningowda880@gmail.com");
-		lp.getPasswordTb().sendKeys("Shalu28@12");
+		lp.getEmailTb().sendKeys(flib.getPropertyKeyValue("email"));
+		lp.getPasswordTb().sendKeys(flib.getPropertyKeyValue("password"));
 		lp.getLogInBt().click();
 		
 		Thread.sleep(5000);
